@@ -1,0 +1,115 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=5580, tid=8792
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0-b147
+# Java VM: Java HotSpot(TM) Client VM (21.0-b17 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x001ea400):  JavaThread "Unknown thread" [_thread_in_vm, id=8792, stack(0x01de0000,0x01e30000)]
+
+Stack: [0x01de0000,0x01e30000],  sp=0x01e2f0b0,  free space=316k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x1337a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x392e2]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x392b5]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x001ea400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8792, stack(0x01de0000,0x01e30000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00820000 - 0x0084f000 	E:\Java\jdk1.7.0\bin\javaw.exe
+0x77440000 - 0x775c0000 	C:\Windows\SysWOW64\ntdll.dll
+0x76ed0000 - 0x76fe0000 	C:\Windows\syswow64\kernel32.dll
+0x74fd0000 - 0x75017000 	C:\Windows\syswow64\KERNELBASE.dll
+0x76530000 - 0x765d1000 	C:\Windows\syswow64\ADVAPI32.dll
+0x76950000 - 0x769fc000 	C:\Windows\syswow64\msvcrt.dll
+0x74fb0000 - 0x74fc9000 	C:\Windows\SysWOW64\sechost.dll
+0x76b50000 - 0x76c40000 	C:\Windows\syswow64\RPCRT4.dll
+0x74db0000 - 0x74e10000 	C:\Windows\syswow64\SspiCli.dll
+0x74da0000 - 0x74dac000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76d20000 - 0x76e20000 	C:\Windows\syswow64\USER32.dll
+0x76280000 - 0x76310000 	C:\Windows\syswow64\GDI32.dll
+0x76270000 - 0x7627a000 	C:\Windows\syswow64\LPK.dll
+0x761c0000 - 0x7625d000 	C:\Windows\syswow64\USP10.dll
+0x72430000 - 0x725ce000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x76e60000 - 0x76eb7000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76fe0000 - 0x77040000 	C:\Windows\system32\IMM32.DLL
+0x75c80000 - 0x75d4c000 	C:\Windows\syswow64\MSCTF.dll
+0x65cd0000 - 0x65d8e000 	E:\Java\jdk1.7.0\jre\bin\msvcr100.dll
+0x64610000 - 0x64931000 	E:\Java\jdk1.7.0\jre\bin\client\jvm.dll
+0x73a60000 - 0x73a67000 	C:\Windows\system32\WSOCK32.dll
+0x76e20000 - 0x76e55000 	C:\Windows\syswow64\WS2_32.dll
+0x75f90000 - 0x75f96000 	C:\Windows\syswow64\NSI.dll
+0x749a0000 - 0x749d2000 	C:\Windows\system32\WINMM.dll
+0x76520000 - 0x76525000 	C:\Windows\syswow64\PSAPI.DLL
+0x74140000 - 0x7414c000 	E:\Java\jdk1.7.0\jre\bin\verify.dll
+0x74090000 - 0x740b0000 	E:\Java\jdk1.7.0\jre\bin\java.dll
+0x74070000 - 0x74083000 	E:\Java\jdk1.7.0\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:E:\adt-bundle-windows-x86\adt-bundle-windows-x86-20140702\sdk\platforms\android-17\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 51519 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames com.example.qqtest.test.StudentTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\Java\jdk1.7.0
+CLASSPATH=.;E:\Java\jdk1.7.0\lib\dt.jar;E:\Java\jdk1.7.0\lib\tools.jar;
+PATH=E:/Java/jdk1.7.0/bin/../jre/bin/client;E:/Java/jdk1.7.0/bin/../jre/bin;E:/Java/jdk1.7.0/bin/../jre/lib/i386;E:\Java\jdk1.7.0\bin;E:\Java\jdk1.7.0\jre\bin;E:\adt-bundle-windows-x86\adt-bundle-windows-x86-20140702\sdk\platform-tools;E:\adt-bundle-windows-x86\adt-bundle-windows-x86-20140702\sdk\tools;E:\TortoiseSVN\bin;E:\Python3.4.0;C:\windows\system32\;F:\soft_work\∑¥±‡“Îπ§æﬂ\apktool_new;E:\adt-bundle-windows-x86\adt-bundle-windows-x86-20140702\sdk\tools\proguard\bin;F:\soft_work\android-ndk-r10c;E:\EclipseNew\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3
+
+Memory: 4k page, physical 4158712k(1138592k free), swap 8315588k(3684396k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.0-b17) for windows-x86 JRE (1.7.0-b147), built on Jun 27 2011 02:25:52 by "java_re" with unknown MS VC++:1600
+
+time: Thu Aug 06 16:15:09 2015
+elapsed time: 0 seconds
+

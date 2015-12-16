@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QQTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="menu_homepage">首页</string>
+    <string name="menu_mine">我的</string>
+    <string name="menu_message">消息</string>
+	<string name="menu_serach">查询</string>
+
+</resources>
